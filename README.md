@@ -4,5 +4,9 @@ This is an open source personal dashboard written on the [Rails](http://rubyonra
 
 Created by [Elijah Wilson](http://elijahwilson.me).
 
+## Run locally
+
+To run this locally, clone this repository to wherever you like then run `bin/rails server`, then head on over to [http://localhost:3000](http://localhost:3000).
+
 ### TODOs
 - add documentation
