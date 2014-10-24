@@ -1,0 +1,17 @@
+<div class="portlet">
+  <div class="row text-center portlet-content mod" id="stocks">
+    <% @db.stocks.each do |stock| %>
+      <% if stock['success'] %>
+        <div class="col-xs-3">
+          <h4 class="title"><%= stock['name'] %></h4>
+          <p class="price">$<%= stock['price'] %></p>
+          <p class="percent"><i class="fa fa-fw <% if stock['percent'] > 0 %>fa-arrow-up green<% elsif stock['percent'] < 0 %>fa-arrow-down red<% else %>fa-ellipsis-h<% end %>"></i><%= stock['percent'] %>%</p>
+        </div>
+      <% else %>
+        <div class="col-xs-3">
+          <h4 class="title">Stock: <%= stock['name'] %> not found!</h4>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

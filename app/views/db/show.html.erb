@@ -1,0 +1,48 @@
+<% content_for :title do %>My Dashboard - <% end %>
+
+<%= render 'db/menu' %>
+
+<div class="container">
+
+  <div class="text-center" id="content">
+
+    <div class="column">
+    	<% @db.modOrder.each do |mod| %>
+			<% if mod == 'date' %>
+				<%= render 'db/date' %>
+			<% elsif mod == 'clock' %>
+				<%= render 'db/clock' %>
+			<% elsif mod == 'news' %>
+				<%= render 'db/news' %>
+			<% elsif mod == 'stocks' %>
+				<%= render 'db/stocks' %>
+			<% elsif mod == 'news' %>
+				<%= render 'db/news' %>
+			<% elsif mod == 'weather' %>
+				<%= render 'db/weather' %>
+			<% end %>
+		<% end %>
+    </div>
+
+  </div>
+</div>
+
+<%= render 'db/copy_modal' %>
+<%= render 'db/stocks_modal' %>
+
+<script type="text/javascript">
+	data = {
+		temp: '<%= @db.temp %>',
+		time: '<%= @db.time %>',
+		stocks: [<% @db.stocks.each do |stock| %>'<%= stock['name'] %>'<% if stock != @db.stocks.last %>,<% end %><% end %>],
+		modOrder: [<% @db.modOrder.each do |mod| %>'<%= mod %>'<% if mod != @db.modOrder.last %>,<% end %><% end %>],
+	}
+</script>
+
+<%= content_for :js do %>
+<%= javascript_include_tag "dash.min" %>
+<script type="text/javascript">
+	getWWL('<%= @db.temp %>', false);
+	updateClock('<%= @db.time %>');
+</script>
+<% end %>

@@ -1,0 +1,28 @@
+<div class="modal fade" id="stocks_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" onclick="resetStocks()" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Stocks</h4>
+      </div>
+      <div class="modal-body">
+        <p>You may have four (4) different or the same stocks. Below you can search for and rearrange your stocks.</p>
+        <div class="column2">
+        <% @db.stocks.each do |stock| %>
+          <div class="portlet"><i class="fa fa-fw fa-pencil s_edit"></i><h3 class="portlet-content stock_name"><%= stock['name'] %></h3></div>
+        <% end %>
+        </div><br>
+        <div class="sb text-center">
+            <p>Search for stocks</p>
+            <input type="edit" placeholder="Stock name or symbol" id="sb">
+        </div><br>
+        <div id="stock_results">
+        </div>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-danger" onclick="resetStocks()" data-dismiss="modal"><i class="fa fa-fw fa-warning"></i> Discard changes</button>
+          <button type="button" class="btn btn-success" onclick="saveStocks()" data-dismiss="modal"><i class="fa fa-fw fa-check"></i> Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -1,0 +1,24 @@
+<% content_for :title do %>About Us - <% end %>
+
+<div class="container">
+
+  <div class="text-center" id="content">
+  	<h1>About</h1>
+  	<h3 class="text-left">Background</h3>
+  	<p class="text-left">The Open Dashboard project was started in 2014 by <%= link_to "ZUMH", "http://zumh.org" %>. It was originally intended to be a quick and easy way to see the date &amp; time. From that it has grown to include the weather, news &amp; stocks; as well as allowing much more customization than the original. The main emphasis is that this project is completely open source to everyone! You can find us on <i class='fa fa-fw fa-github'></i><%= link_to "GitHub", "https://github.com/tizz98/opendash" %> and look below to see the number of dashboards created with this website!</p><br>
+  	<p>Number of dashboards created</p>
+  	<h2><%= @count %></h2>
+
+  	<div class="row" id="links">
+  	  	<div class="col-xs-4">
+  			<h2><i class="fa fa-fw fa-home"></i><%= link_to "Home", root_path %></h2>
+  		</div>
+  		<div class="col-xs-4">
+  			<h2><i class="fa fa-fw fa-rocket"></i><%= link_to "ZUMH", "http://zumh.org" %></h2>
+  		</div>
+  		<div class="col-xs-4">
+  			<h2><i class="fa fa-fw fa-github"></i><%= link_to "GitHub", "https://github.com/tizz98/opendash" %></h2>
+  		</div>
+  	</div>
+  </div>
+</div>

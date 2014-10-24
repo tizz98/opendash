@@ -1,0 +1,34 @@
+.body {
+	min-width: 520px;
+}
+
+.column {
+	max-width: 100%;
+	padding-bottom: 100px;
+}
+
+.portlet {
+	margin: 0 1em 1em 0;
+	padding: 0.3em;
+}
+
+.portlet-content {
+    padding: 0.4em;
+ }
+
+.portlet-placeholder {
+	border: 1px dotted white;
+	margin: 0 1em 1em 0;
+	height: 50px;
+}
+
+.new:hover {
+	border: 1px dotted white;
+	margin: 0 1em 1em 0;
+	height: 50px;
+	background: url('../img/plus.png') no-repeat center;
+}
+
+.new {
+	height: 50px;
+}

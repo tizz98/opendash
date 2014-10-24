@@ -1,0 +1,16 @@
+<div class="menu-wrap">
+  <nav class="menu">
+    <div class="profile"><span id="title"><span id='menu_url'><%= @db.uid %></span> <a onclick="copy()"><i class="fa fa-fw fa-link"></i></a></span></div>
+    <div class="link-list">
+      <p><a onclick="getWWL('c', true)">&deg;C</a> / <a onclick="getWWL('f', true)">&deg;F</a></p>
+      <p><a onclick="updateClock('24');sendData(data)">24h</a> / <a onclick="updateClock('12');sendData(data)">12h</a></p>
+      <p><a onclick="changeStocks()"><i class="fa fa-fw fa-bar-chart"></i> Stocks</a></p>
+    </div>
+    <div class="icon-list">
+      <a href="/about/"><i class="fa fa-fw fa-question-circle"></i></a>
+      <a onclick="edit()" id="edit"><i class="fa fa-fw fa-pencil"></i></a>
+      <a onclick="save()" id="save"><i class="fa fa-fw fa-save"></i></a>
+    </div>
+  </nav>
+</div>
+<button class="menu-button" id="open-button"><i class="fa fa-fw fa-cog"></i><span>Open Menu</span></button>
