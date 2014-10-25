@@ -1,0 +1,1 @@
+function sendData(e){var n="/d/create";getModOrder(),$.ajax({type:"POST",url:n,data:e})}function changeLinks(e){var n=document.getElementById("menu_url"),a=document.getElementById("modal_url");n.innerHTML=e,a.innerHTML='<a href="/d/'+e+'">Copy me</a>'}
