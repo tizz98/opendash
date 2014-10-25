@@ -47,3 +47,4 @@ config/initializers/secret_token.rb
 bower.json
 
 .DS_STORE
+.env
