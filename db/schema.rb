@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20141021214431) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "dbs", force: true do |t|
     t.string   "temp",       default: "f"
     t.string   "time",       default: "24"
