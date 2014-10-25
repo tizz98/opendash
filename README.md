@@ -10,3 +10,4 @@ To run this locally, clone this repository to wherever you like then run `bin/ra
 
 ## TODOs
 - add documentation
+- add tutorials on how to customize your dashboard
