@@ -6,6 +6,11 @@ Created by [Elijah Wilson](http://elijahwilson.me).
 
 ## Run locally
 
+### Environment Variables
+- `DEV_SECRET_KEY_BASE`
+- `TEST_SECRET_KEY_BASE`
+- `SECRET_KEY_BASE` (_production secret key_)
+
 To run this locally, clone this repository to wherever you like then run `bin/rails server`, then head on over to [http://localhost:3000](http://localhost:3000).
 
 _OR_
