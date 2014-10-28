@@ -1,9 +1,4 @@
 @font-face {
-    font-family: Lato-hairline;
-    src: url(<%= asset_path('Lato-Hairline.ttf') %>);
-}
-
-@font-face {
 	font-family: Lato-light;
 	src: url(<%= asset_path('Lato-Light.ttf') %>);
 }
@@ -11,7 +6,7 @@
 body {
 	background-color: #373a47;
 	color: white;
-	font-family: Lato-hairline;
+	font-family: Lato-light;
 }
 
 #time { font-size: 125px; }
@@ -44,10 +39,6 @@ body {
 
 @media (min-width: 1500px) {
 	.rwd-break { display: none; }
-}
-
-@media (max-width: 990px) {
-	body { font-family: Lato-light; }
 }
 
 @media (max-width: 960px) {
