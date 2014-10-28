@@ -32,6 +32,6 @@ gem 'rails_12factor'
 gem 'unicorn'
 
 # fonts being weird with cloudfront
-# gem 'font_assets'
+gem 'font_assets'
 
 ruby "2.0.0"
