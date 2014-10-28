@@ -31,4 +31,7 @@ gem 'rails_12factor'
 # Use unicorn as the app server
 gem 'unicorn'
 
+# fonts being weird with cloudfront
+gem 'font_assets'
+
 ruby "2.0.0"
