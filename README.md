@@ -7,9 +7,14 @@ Created by [Elijah Wilson](http://elijahwilson.me).
 ## Run locally
 
 ### Environment Variables
+_In `config/secrets.yml`_
 - `DEV_SECRET_KEY_BASE`
 - `TEST_SECRET_KEY_BASE`
 - `SECRET_KEY_BASE` (_production secret key_)
+
+_In `config/production.rb`_
+- `CDN_BASE` (_for use with AWS CloudFront for example_)
+- `FONT_BASE` (_used with the `font_assets` gem, and coincidentally with CloudFront_)
 
 To run this locally, clone this repository to wherever you like then run `bin/rails server`, then head on over to [http://localhost:3000](http://localhost:3000).
 
