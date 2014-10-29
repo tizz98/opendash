@@ -32,3 +32,17 @@
 .new {
 	height: 50px;
 }
+
+.editable {
+	border: 1px dotted white;
+	margin: 0 1em 1em 0;
+	border-radius: 10px;
+}
+
+.portlet-content.editable {
+	cursor: move;
+}
+
+.ui-sortable-placeholder {
+	height: 100px;
+}
