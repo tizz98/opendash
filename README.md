@@ -4,7 +4,7 @@ This is an open source personal dashboard written on the [Rails](http://rubyonra
 
 Created by [Elijah Wilson](http://elijahwilson.me).
 
-## Run locally
+## Setup
 
 ### Environment Variables
 In `config/secrets.yml`
@@ -15,6 +15,8 @@ In `config/secrets.yml`
 In `config/production.rb`
 - `CDN_BASE` (_for use with AWS CloudFront for example_)
 - `FONT_BASE` (_used with the `font_assets` gem, and coincidentally because of CloudFront_)
+
+### Run locally
 
 To run this locally, clone this repository to wherever you like then run `bin/rails server`, then head on over to [http://localhost:3000](http://localhost:3000).
 
