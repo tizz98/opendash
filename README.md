@@ -18,11 +18,11 @@ In `config/production.rb`
 
 ### Run locally
 
-To run this locally, clone this repository to wherever you like then run `bin/rails server`, then head on over to http://localhost:3000.
+To run this locally, clone this repository to wherever you like then run `bin/rails server`, then head on over to http://localhost:3000
 
 _OR_
 
-Use foreman & unicorn as a server to simulate a production environment. Make sure you have those installed and then run `foreman start`, head over to http://localhost:3000.
+Use foreman & unicorn as a server to simulate a production environment. Make sure you have those installed and then run `foreman start`, head over to http://localhost:3000
 
 ## TODOs
 - add documentation
