@@ -26,6 +26,6 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 
 ## TODOs
 - add documentation
-- add tutorials on how to customize your dashboard
+- ~~add tutorials on how to customize your dashboard~~
 - Allow adding/removing modules
 - Manually change location
