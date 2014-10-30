@@ -36,13 +36,14 @@
 		time: '<%= @db.time %>',
 		stocks: [<% @db.stocks.each do |stock| %>'<%= stock['name'] %>'<% if stock != @db.stocks.last %>,<% end %><% end %>],
 		modOrder: [<% @db.modOrder.each do |mod| %>'<%= mod %>'<% if mod != @db.modOrder.last %>,<% end %><% end %>],
+		loc: '<%= @db.loc %>',
 	}
 </script>
 
 <%= content_for :js do %>
 <%= javascript_include_tag "dash.min" %>
 <script type="text/javascript">
-	getWWL('<%= @db.temp %>', false);
+	getWWL('<%= @db.temp %>', false, '<%= @db.loc %>');
 	updateClock('<%= @db.time %>');
 </script>
 <% end %>

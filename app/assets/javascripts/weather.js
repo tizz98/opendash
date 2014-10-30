@@ -44,20 +44,29 @@ function getWeather(location, units) {
 	});
 }
 
-function getWWL(units,send) {
+function getWWL(units,send,loc) {
 	if (send == true) {
-		$.get("http://ipinfo.io", function(response) {
-		    var location = response.city + ", " + response.region;
-		    getWeather(location, units);
-		}, "jsonp")
-		.done(function(){
+		if (loc == 'auto') {
+			$.get("http://ipinfo.io", function(response) {
+			    var location = response.city + ", " + response.region;
+			    getWeather(location,units);
+			}, "jsonp")
+			.done(function(){
+				sendData(data);
+			});
+		} else {
+			getWeather(loc,units);
 			sendData(data);
-		});
+		}
 	} else {
-		$.get("http://ipinfo.io", function(response) {
-		    var location = response.city + ", " + response.region;
-		    getWeather(location, units);
-		}, "jsonp");
+		if (loc == 'auto') {
+			$.get("http://ipinfo.io", function(response) {
+			    var location = response.city + ", " + response.region;
+			    getWeather(location,units);
+			}, "jsonp");
+		} else {
+			getWeather(loc,units)
+		}
 	}
 
 }

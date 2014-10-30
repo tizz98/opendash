@@ -59,7 +59,7 @@ class DbController < ApplicationController
   	end
 
     def create_db_params
-      params.permit(:uid, :time, :temp, :stocks, :modOrder)
+      params.permit(:uid, :time, :temp, :stocks, :modOrder, :loc)
     end
 end
 
