@@ -34,4 +34,6 @@ gem 'unicorn'
 # fonts being weird with cloudfront
 gem 'font_assets'
 
+gem 'newrelic_rpm'
+
 ruby "2.0.0"
