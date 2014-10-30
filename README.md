@@ -48,3 +48,5 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 - modules.js
 - jquery-ui.min.js
 - portlets.js
+- send.js
+- stocks.js
