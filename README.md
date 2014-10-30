@@ -28,7 +28,7 @@ _OR_
 Use foreman & unicorn as a server to simulate a production environment. Make sure you have those installed and then run `foreman start`, head over to [http://localhost:3000](http://localhost:3000).
 
 ## TODOs
-- add documentation
+- add _more, better_ documentation
 - ~~add tutorials on how to customize your dashboard~~ => http://dash.zumh.org/about/
 - Allow adding/removing modules
 - Manually change location
