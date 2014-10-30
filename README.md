@@ -34,3 +34,17 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 - Manually change location
 - Change color scheme
 - Holidays
+
+## JavaScript Order
+- date.min.js
+- time.js
+- codes.min.js
+- weather.js
+- news.js
+- helpers.js
+- modernizr.custom.js
+- classie.js
+- menu.js
+- modules.js
+- jquery-ui.min.js
+- portlets.js
