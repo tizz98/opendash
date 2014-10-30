@@ -16,6 +16,9 @@ In `config/production.rb`
 - `CDN_BASE` (_for use with AWS CloudFront for example_)
 - `FONT_BASE` (_used with the `font_assets` gem, and coincidentally because of CloudFront_)
 
+In `confing/newrelic.yml`
+- `NEWRELIC_KEY` (_for use with NewRelic monitoring_)
+
 ### Run locally
 
 To run this locally, clone this repository to wherever you like then run `bin/rails server`, then head on over to [http://localhost:3000](http://localhost:3000).
