@@ -32,7 +32,7 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 - ~~add tutorials on how to customize your dashboard~~ => http://dash.zumh.org/about/
 - Allow adding/removing modules
 - Manually change location
-- Change color scheme
+- Ability to change color scheme
 - Holidays
 
 ## JavaScript Order
