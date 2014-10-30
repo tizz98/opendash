@@ -35,7 +35,7 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 - Ability to change color scheme
 - Holidays
 
-## JavaScript Order
+## JavaScript Order (dash.min.js)
 - date.min.js
 - time.js
 - codes.min.js
