@@ -31,7 +31,7 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 - add _more, better_ documentation
 - ~~add tutorials on how to customize your dashboard~~ => http://dash.zumh.org/about/
 - Allow adding/removing modules
-- Manually change location | ~~backend~~ => http://git.io/a8FSMw .. frontend
+- ~~Manually change location~~ | ~~backend~~ => http://git.io/a8FSMw .. ~~frontend~~ => http://git.io/_5jXMg
 - Ability to change color scheme
 - Holidays
 
