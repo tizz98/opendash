@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    background-color: black;
+}
+.wrap {
+    width: 100%;
+    overflow:auto;
+    height:100%;
+}
+.fleft {
+    float:left;
+    width: 50%;
+    background: url('<%= asset_path("db.png")%>') repeat center;
+    color: white;
+    height: 100%;
+}
+.fright {
+    float: right;
+    background: url('<%= asset_path("about.png")%>') repeat center;
+    color: white;
+    height: 100%;
+    width: 50%;
+}
+.fright, .fleft {
+    text-align: center;
+    opacity: 0.5;
+    z-index: 0;
+}
+.fright:hover {
+    opacity: 1;
+}
+.fleft:hover {
+    opacity: 1;
+}
+h1 {
+    font-size: 2em;
+    margin-top: 50%;
+}
+@media (max-width: 768px) {
+    .fright, .fleft {
+        width: 100%;
+        clear: both;
+        opacity: 1;
+    }
+    .fright {
+        border-top: 5px solid white;
+    }
+}
