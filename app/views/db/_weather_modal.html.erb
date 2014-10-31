@@ -1,0 +1,24 @@
+<div class="modal fade" id="weather_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Weather Location</h4>
+      </div>
+      <div class="modal-body">
+        <p>You may change your weather location or leave it on auto where it will get the weather based on your location.</p>
+        <div class="sb text-center">
+            <p>Enter location</p>
+            <input type="edit" placeholder="Enter new location" id="w_sb">
+            <p id="error">Please enter a valid location</p>
+            <p><em>or</em> <a onclick="editWeather(true)">set to auto</a></p>
+            <br><h4>Current: <em><%= @db.loc %></em></h4>
+        </div><br>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-fw fa-warning"></i> Discard changes</button>
+          <button type="button" class="btn btn-success" onclick="editWeather(false)"><i class="fa fa-fw fa-check"></i> Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

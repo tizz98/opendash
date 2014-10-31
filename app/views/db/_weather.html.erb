@@ -1,42 +1,48 @@
 <div class="portlet">
   <div class="row portlet-content mod" id="weather">
-    <div class="col-md-4" id="today">
-        <h4>Today</h4><br>
-        <div class="row">
-          <div class="col-xs-6 text-right">
-            <p class="icon"></p>
+    <div id="g_weather">
+      <div class="col-md-4" id="today">
+          <h4>Today</h4><br>
+          <div class="row">
+            <div class="col-xs-6 text-right">
+              <p class="icon"></p>
+            </div>
+            <div class="col-xs-6 text-left">
+              <p><span class="cond"></span></p>
+              <p><i class="fa fa-arrow-up fa-fw"></i> <span class="high">0</span>&deg; &nbsp; <br class="rwd-break" /><i class="fa fa-arrow-down fa-fw"></i> <span class="low">0</span>&deg;</p>
+            </div>
           </div>
-          <div class="col-xs-6 text-left">
-            <p><span class="cond"></span></p>
-            <p><i class="fa fa-arrow-up fa-fw"></i> <span class="high">0</span>&deg; &nbsp; <br class="rwd-break" /><i class="fa fa-arrow-down fa-fw"></i> <span class="low">0</span>&deg;</p>
-          </div>
-        </div>
-    </div>
+      </div>
 
-    <div class="col-md-4" id="tmw">
-        <h4>Tomorrow</h4><br>
-        <div class="row">
-          <div class="col-xs-6 text-right">
-            <p class="icon"></p>
+      <div class="col-md-4" id="tmw">
+          <h4>Tomorrow</h4><br>
+          <div class="row">
+            <div class="col-xs-6 text-right">
+              <p class="icon"></p>
+            </div>
+            <div class="col-xs-6 text-left">
+              <p><span class="cond"></span></p>
+              <p><i class="fa fa-arrow-up fa-fw"></i> <span class="high">0</span>&deg; &nbsp; <br class="rwd-break" /><i class="fa fa-arrow-down fa-fw"></i> <span class="low">0</span>&deg;</p>
+            </div>
           </div>
-          <div class="col-xs-6 text-left">
-            <p><span class="cond"></span></p>
-            <p><i class="fa fa-arrow-up fa-fw"></i> <span class="high">0</span>&deg; &nbsp; <br class="rwd-break" /><i class="fa fa-arrow-down fa-fw"></i> <span class="low">0</span>&deg;</p>
-          </div>
-        </div>
-    </div>
+      </div>
 
-    <div class="col-md-4" id="dat">
-        <h4><span id="dat_name"></span></h4><br>
-        <div class="row">
-          <div class="col-xs-6 text-right">
-            <p class="icon"></p>
+      <div class="col-md-4" id="dat">
+          <h4><span id="dat_name"></span></h4><br>
+          <div class="row">
+            <div class="col-xs-6 text-right">
+              <p class="icon"></p>
+            </div>
+            <div class="col-xs-6 text-left">
+              <p><span class="cond"></span></p>
+              <p><i class="fa fa-arrow-up fa-fw"></i> <span class="high">0</span>&deg; &nbsp; <br class="rwd-break" /><i class="fa fa-arrow-down fa-fw"></i> <span class="low">0</span>&deg;</p>
+            </div>
           </div>
-          <div class="col-xs-6 text-left">
-            <p><span class="cond"></span></p>
-            <p><i class="fa fa-arrow-up fa-fw"></i> <span class="high">0</span>&deg; &nbsp; <br class="rwd-break" /><i class="fa fa-arrow-down fa-fw"></i> <span class="low">0</span>&deg;</p>
-          </div>
-        </div>
+      </div>
+    </div> <!-- end g_weather -->
+
+    <div id="b_weather">
+      <h2>Error with given location</h2>
     </div>
   </div>
 </div> <!-- end portlet -->

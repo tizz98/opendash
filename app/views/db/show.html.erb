@@ -29,6 +29,7 @@
 
 <%= render 'db/copy_modal' %>
 <%= render 'db/stocks_modal' %>
+<%= render 'db/weather_modal' %>
 
 <script type="text/javascript">
 	data = {
@@ -43,7 +44,7 @@
 <%= content_for :js do %>
 <%= javascript_include_tag "dash.min" %>
 <script type="text/javascript">
-	getWWL('<%= @db.temp %>', false, '<%= @db.loc %>');
+	getWWL('<%= @db.temp %>', false, '<%= @db.loc %>', true);
 	updateClock('<%= @db.time %>');
 </script>
 <% end %>
