@@ -13,6 +13,7 @@ body, html {
     background: url('<%= asset_path("db.png")%>') repeat center;
     color: white;
     height: 100%;
+    border-right: 2.5px solid white;
 }
 .fright {
     float: right;
@@ -20,6 +21,7 @@ body, html {
     color: white;
     height: 100%;
     width: 50%;
+    border-left: 2.5px solid white;
 }
 .fright, .fleft {
     text-align: center;
@@ -44,5 +46,9 @@ h1 {
     }
     .fright {
         border-top: 5px solid white;
+        border-left: 0;
+    }
+    .fleft {
+        border-right: 0;
     }
 }
