@@ -14,7 +14,6 @@ function getWeather(location, units, initial) {
 		var obj = my_data.query.results;
 
 		if (obj == null) {
-			console.log('obj is null');
 			$("#g_weather").hide();
 			$('#b_weather').show();
 			return;
@@ -78,8 +77,7 @@ function getWWL(units,send,loc,initial) {
 			var sendTheData = function() {
 					var url = '/d/create';
 					getModOrder();
-					console.log(data);
-
+					
 					$.ajax({
 					  type: "POST",
 					  url: url,
