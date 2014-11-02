@@ -88,7 +88,7 @@ def get_stock_info(symbol)
     my_data['percent'] = data['ChangePercent'].round(2)
   end
 
-  my_data['name'] = symbol
+  my_data['name'] = symbol.upcase
 
   return my_data
 
