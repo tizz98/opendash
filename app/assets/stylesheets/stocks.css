@@ -16,3 +16,7 @@
 .s_edit {
 	cursor: pointer;
 }
+
+.stock_name {
+	cursor: move;
+}
