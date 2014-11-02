@@ -76,12 +76,7 @@ def get_stock_info(symbol)
   data = JSON.parse(content)
 
   my_data = Hash.new
-
-  begin
-    my_data['success'] = data['Status'] == 'SUCCESS'
-  rescue Exception => e
-    my_data = get_stock_info("GOOGL")
-  end
+  my_data['success'] = data['Status'] == 'SUCCESS'
 
   if my_data['success']
     my_data['price'] = '%.2f' % data['LastPrice']
