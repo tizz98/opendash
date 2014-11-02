@@ -29,8 +29,12 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 
 ## TODOs
 - add _more, better_ documentation
+	- ~~inline~~
+	- GitHub wiki
 - ~~add tutorials on how to customize your dashboard~~ => http://dash.zumh.org/about/
 - Allow adding/removing modules
+	- Not more than 1 of the same
+	- Must have at least one on the page
 - ~~Manually change location~~ | ~~backend~~ => http://git.io/a8FSMw .. ~~frontend~~ => http://git.io/_5jXMg
 - Ability to change color scheme
 	- Default as well as predefined options (color scheme model?)
@@ -38,6 +42,10 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 	- Allow user to enter any color, hex
 	- Colorpicker?
 - Holidays
+	- User able to toggle on/off
+	- User set type/location of holidays
+	- Off/None set by default
+	- Changes the color scheme to compliment the holiday
 
 ## JavaScript Order (dash.min.js)
 - date.min.js
