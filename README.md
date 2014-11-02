@@ -46,6 +46,9 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 	- User set type/location of holidays
 	- Off/None set by default
 	- Changes the color scheme to compliment the holiday
+- 'Create' redirection
+	- Using rails render :js doesn't feel right
+	- Better/more solid solution needed
 
 ## JavaScript Order (dash.min.js)
 - date.min.js
