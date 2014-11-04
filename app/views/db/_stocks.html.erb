@@ -5,7 +5,7 @@
         <div class="col-xs-3">
           <h4 class="title"><%= stock['name'] %></h4>
           <p class="price">$<%= stock['price'] %></p>
-          <p class="percent"><i class="fa fa-fw <% if stock['percent'] > 0 %>fa-arrow-up green<% elsif stock['percent'] < 0 %>fa-arrow-down red<% else %>fa-ellipsis-h<% end %>"></i><br class="rwd-break" /><%= stock['percent'] %>%</p>
+          <p class="percent"><i class="fa fa-fw <% if stock['percent'] > 0 %>fa-arrow-up green<% elsif stock['percent'] < 0 %>fa-arrow-down red<% else %>fa-ellipsis-h<% end %>"></i><br class="rwd-break" /><%= stock['percent'].abs %>%</p>
         </div>
       <% else %>
         <div class="col-xs-3">
