@@ -109,7 +109,6 @@ def get_stock_info(symbol)
   end
 
   my_data['name'] = symbol.upcase
-
   return my_data
 end
 
