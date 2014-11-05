@@ -56,6 +56,7 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 - codes.min.js
 - weather.js
 - news.js
+- bootstrap-colorpicker.min.js
 - helpers.js
 - modernizr.custom.js
 - classie.js
