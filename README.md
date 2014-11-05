@@ -37,7 +37,7 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 	- Not more than one of the same
 	- Must have at least one on the page
 - ~~Manually change location~~ | ~~backend~~ => http://git.io/a8FSMw .. ~~frontend~~ => http://git.io/_5jXMg
-- ~~Ability to change color scheme~~
+- ~~Ability to change color scheme~~ => http://git.io/dIVjaw
 	- ~~Default as well as predefined options (color scheme model?)~~
 	- ~~Two changeable colors, background & text color~~
 	- ~~Allow user to enter any color, hex~~
