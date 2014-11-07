@@ -1,3 +1,10 @@
+/*
+	setDate(hours)
+	==============
+	Gets the current date and formats it as so:
+	full_month_name day, year
+*/
+
 function setDate(hours) {
 	
 	var today = new Date();
