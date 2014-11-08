@@ -14,12 +14,12 @@ function getWeather(location, units, initial) {
 	if (units == undefined || units == '' || units == 'f') {
 		// set the temp global data to f and create the url
 		data['temp'] = 'f';
-		var url = "https://query.yahooapis.com/v1/public/yql?q=SELECT * FROM weather.forecast WHERE woeid in (select woeid from geo.places(1) where text='" + location + "') and u='f'&format=json";
+		var url = "http://query.yahooapis.com/v1/public/yql?q=SELECT * FROM weather.forecast WHERE woeid in (select woeid from geo.places(1) where text='" + location + "') and u='f'&format=json";
 	} else if (units == 'c') {
 		// if the units are c then we use celcius
 		// set the global data for temp to c and create the url
 		data['temp'] = 'c';
-		var url = "https://query.yahooapis.com/v1/public/yql?q=SELECT * FROM weather.forecast WHERE woeid in (select woeid from geo.places(1) where text='" + location + "') and u='c'&format=json";
+		var url = "http://query.yahooapis.com/v1/public/yql?q=SELECT * FROM weather.forecast WHERE woeid in (select woeid from geo.places(1) where text='" + location + "') and u='c'&format=json";
 	} else {
 		// if we get some really weird units passed into this function
 		// we want to know...
@@ -161,10 +161,10 @@ function getWWL(units,send,loc,initial) {
 
 				if (units == undefined || units == '' || units == 'f') {
 					data['temp'] = 'f';
-					var url = "https://query.yahooapis.com/v1/public/yql?q=SELECT * FROM weather.forecast WHERE woeid in (select woeid from geo.places(1) where text='" + location + "') and u='f'&format=json";
+					var url = "http://query.yahooapis.com/v1/public/yql?q=SELECT * FROM weather.forecast WHERE woeid in (select woeid from geo.places(1) where text='" + location + "') and u='f'&format=json";
 				} else if (units == 'c') {
 					data['temp'] = 'c';
-					var url = "https://query.yahooapis.com/v1/public/yql?q=SELECT * FROM weather.forecast WHERE woeid in (select woeid from geo.places(1) where text='" + location + "') and u='c'&format=json";
+					var url = "http://query.yahooapis.com/v1/public/yql?q=SELECT * FROM weather.forecast WHERE woeid in (select woeid from geo.places(1) where text='" + location + "') and u='c'&format=json";
 				} else {
 					console.log('weird units passed into weather');
 					console.log(typeof(units) + "...units is " + units);
