@@ -23,8 +23,7 @@ function changeStocks() {
 
 // make stocks edit icon do something when it is clicked
 // this applies at page load
-$(function() {
-
+window.onload = function() {
 	$('.s_edit').click(function(event){
 		// if the element has the fa-pencil class
 		// this means that when the user clicks on it
@@ -58,7 +57,7 @@ $(function() {
 		}
 	});
 
-});
+}
 
 /*
 	lockStocks()
