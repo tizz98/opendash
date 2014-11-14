@@ -19,7 +19,19 @@ In `config/production.rb`
 In `confing/newrelic.yml`
 - `NEWRELIC_KEY` (_for use with NewRelic monitoring_)
 
+### Requirements
+
+- Ruby 2.0.0-p594
+- Rails 4.1.6
+- Postgresql
+
 ### Run locally
+
+#### Database Setup
+
+Make sure you have a user account for postgresql. If you don't or are not sure, run `sudo -i -u postgres` then `createuser --interactive`, now create a user with the same username you're using to run rails with. After you're done, `quit` and run `bin/rake db:create` and finally `bin/rake db:migrate`.
+
+#### Running Server
 
 To run this locally, clone this repository to wherever you like then run `bin/rake db:migrate`, `bin/rails server`, then head on over to [http://localhost:3000](http://localhost:3000).
 
