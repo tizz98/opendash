@@ -29,6 +29,10 @@ In `confing/newrelic.yml`
 
 #### Database Setup
 
+When installing gems you may get an error for `pg` which is the postgresql gem. In order to fix this you need to have postgresql already installed on your machine. This is obviously Operating System dependant but for example here's what you might do on an ubuntu system:
+
+`sudo apt-get install libpq-dev` then `gem install pg`
+
 Make sure you have a user account for postgresql. If you don't or are not sure, run `sudo -i -u postgres` then `createuser --interactive`, now create a user with the same username you're using to run rails with. After you're done, `quit` and run `bin/rake db:create` and finally `bin/rake db:migrate`.
 
 #### Running Server
