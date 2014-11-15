@@ -29,7 +29,7 @@ In `confing/newrelic.yml`
 
 #### Database Setup
 
-When installing gems you may get an error for `pg` which is the postgresql gem. In order to fix this you need to have postgresql already installed on your machine. This is obviously Operating System dependant but for example here's what you might do on an ubuntu system:
+When installing gems you may get an error for `pg` which is the postgresql gem. In order to fix this you need to have postgresql already installed on your machine. On some systems you also may need to install a library to remedy this issue. This is obviously operating system dependant but for example here's what you might do on an ubuntu system:
 
 `sudo apt-get install libpq-dev` then `gem install pg`
 
