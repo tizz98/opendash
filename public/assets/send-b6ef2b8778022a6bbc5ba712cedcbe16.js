@@ -1,0 +1,1 @@
+function sendData(a){var e="/d/create";getModOrder(),$.ajax({type:"POST",url:e,data:a})}
