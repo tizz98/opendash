@@ -12,7 +12,7 @@ In `config/secrets.yml`
 - `TEST_SECRET_KEY_BASE`
 - `SECRET_KEY_BASE` (_production secret key_)
 
-In `config/production.rb` (_depreciated as of 0d26622f53e676a02e6bcda6770a3cf63b35aa1d_)
+In `config/production.rb` (_depreciated as of [a99ff93](https://github.com/tizz98/opendash/commit/a99ff93817d85fac24e66986cd82adbf67dd5fe6)_)
 - `CDN_BASE` (_for use with AWS CloudFront for example_)
 - `FONT_BASE` (_used with the `font_assets` gem, and coincidentally because of CloudFront_)
 
