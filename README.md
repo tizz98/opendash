@@ -12,7 +12,7 @@ In `config/secrets.yml`
 - `TEST_SECRET_KEY_BASE`
 - `SECRET_KEY_BASE` (_production secret key_)
 
-In `config/production.rb`
+In `config/production.rb` (_depreciated as of 0d26622f53e676a02e6bcda6770a3cf63b35aa1d_)
 - `CDN_BASE` (_for use with AWS CloudFront for example_)
 - `FONT_BASE` (_used with the `font_assets` gem, and coincidentally because of CloudFront_)
 
@@ -44,20 +44,10 @@ _OR_
 Use foreman & unicorn as a server to simulate a production environment. Make sure you have those installed and then run `bin/rake db:migrate`, `foreman start`, then head over to [http://localhost:3000](http://localhost:3000).
 
 ## TODOs
-- add _more, better_ documentation
-	- ~~inline~~
-	- ~~JavaScript inline~~
-	- GitHub wiki
-- ~~add tutorials on how to customize your dashboard~~ => http://dash.zumh.org/about/
+- GitHub wiki
 - Allow adding/removing modules
 	- Not more than one of the same
 	- Must have at least one on the page
-- ~~Manually change location~~ | ~~backend~~ => http://git.io/a8FSMw .. ~~frontend~~ => http://git.io/_5jXMg
-- ~~Ability to change color scheme~~ => http://git.io/dIVjaw
-	- ~~Default as well as predefined options (color scheme model?)~~
-	- ~~Two changeable colors, background & text color~~
-	- ~~Allow user to enter any color, hex~~
-	- ~~Colorpicker?~~
 - Holidays
 	- User able to toggle on/off
 	- User set type/location of holidays
@@ -66,6 +56,9 @@ Use foreman & unicorn as a server to simulate a production environment. Make sur
 - `create` redirection
 	- Using rails `render :js` doesn't feel right
 	- Better/more solid solution needed
+- Compile assets on deploy
+    - remove compiled assets from repo
+    - add compiled asset dirs to `.gitignore`
 
 ## JavaScript Order (`dash.min.js`)
 - date.min.js
